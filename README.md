@@ -33,13 +33,6 @@ The model is trained on the `dataset_2190_cholesterol.csv` containing 303 patien
 - **ca**: Number of major vessels colored by fluoroscopy (0-3)
 - **thal**: Thalassemia (3 = normal, 6 = fixed defect, 7 = reversible defect)
 
-## Installation
-
-### Prerequisites
-- Python 3.7 or higher
-- pip (Python package manager)
-
-
 
 ### Training the Model
 
@@ -61,8 +54,6 @@ This will:
 ```bash
 python predict.py
 ```
-
-Follow the prompts to enter patient information and get a prediction.
 
 #### Batch Prediction from CSV
 
