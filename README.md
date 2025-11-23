@@ -39,20 +39,7 @@ The model is trained on the `dataset_2190_cholesterol.csv` containing 303 patien
 - Python 3.7 or higher
 - pip (Python package manager)
 
-### Setup
 
-1. Clone the repository:
-```bash
-git clone https://github.com/alinapradhan/Cholestrol-and-genetic-relation-in-defining-the-artrties-clogging-.git
-cd Cholestrol-and-genetic-relation-in-defining-the-artrties-clogging-
-```
-
-2. Install required packages:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
 
 ### Training the Model
 
@@ -85,24 +72,6 @@ python predict.py your_data.csv
 
 This will create `your_data_predictions.csv` with predictions for all patients.
 
-### Using the Model in Your Code
-
-```python
-from cholesterol_model import CholesterolPredictor
-
-# Load the trained model
-predictor = CholesterolPredictor()
-predictor.load_model('best_cholesterol_model.pkl')
-
-# Make a prediction
-result, confidence = predictor.predict_single(
-    age=45, sex=1, cp=3, trestbps=130, fbs=0, restecg=2,
-    thalach=150, exang=0, oldpeak=2.0, slope=2, ca=1, thal=7, chol=250
-)
-
-print(f"Prediction: {result}")
-print(f"Confidence: {confidence:.2f}%")
-```
 
 ## Model Performance
 
@@ -117,10 +86,6 @@ The Random Forest model achieves the best performance:
 ## Example Output
 
 ```
-======================================================================
-EXAMPLE PREDICTION
-======================================================================
-
 Patient Profile:
   Age: 45, Sex: Male (1)
   Chest Pain Type: 3, Resting BP: 130 mm Hg
@@ -141,10 +106,6 @@ Confidence: 64.00%
 - `dataset_2190_cholesterol.csv`: Training dataset
 - `best_cholesterol_model.pkl`: Saved trained model
 - `requirements.txt`: Python dependencies
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
