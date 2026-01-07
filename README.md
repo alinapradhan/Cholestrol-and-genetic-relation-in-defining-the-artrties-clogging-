@@ -7,7 +7,7 @@ Machine Learning model to predict cholesterol-related heart disease risk based o
 This project uses machine learning to analyze the relationship between cholesterol levels, genetic factors, and weight-related indicators to predict whether a patient has a **YES** (high risk) or **NO** (low risk) for cholesterol-related heart disease.
 
 ## Features
-
+ 
 - **Multiple ML Models**: Compares Logistic Regression, Random Forest, and SVM classifiers
 - **High Accuracy**: Achieves ~85% accuracy on test data
 - **Genetic Factors**: Considers sex, thalassemia, and other genetic markers
